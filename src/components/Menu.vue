@@ -1,13 +1,13 @@
+<script setup>
+// import { RouterLink } from 'vue-router';
+</script>
+
 <template>
-    <div class="grid grid-rows-3 h-full">
-        <div class="flex justify-center items-center text-5xl border-b-2 border-gray-950 group hover:bg-gray-950">
-            <a class="group-hover:text-white" href="#">Home</a>
-        </div>
-        <div class="flex justify-center items-center text-5xl border-b-2 border-gray-950 group hover:bg-gray-950">
-            <a class="group-hover:text-white" href="#">About</a>
-        </div>
-        <div class="flex justify-center items-center text-5xl group hover:bg-gray-950">
-            <a class="group-hover:text-white" href="#">Works</a>
+    <div className="col-span-3 col-start-9 row-start-2 border-r-2 border-white">
+        <div class="grid grid-rows-3 h-full">
+            <RouterLink class="flex justify-center items-center text-5xl hover:bg-white hover:text-black border-b-2 border-white" :class="{ 'bg-white text-black': $route.path === '/' }" to="/">Works</RouterLink>
+            <RouterLink class="flex justify-center items-center text-5xl hover:bg-white hover:text-black border-b-2 border-white" :class="{ 'bg-white text-black': $route.path === '/about' }" to="/about">About</RouterLink>
+            <RouterLink class="flex justify-center items-center text-5xl hover:bg-white hover:text-black" :class="{ 'bg-white text-black': $route.path === '/contact' }" to="/contact">Contact</RouterLink>
         </div>
     </div>
 </template>
