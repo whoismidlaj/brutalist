@@ -1,5 +1,5 @@
 <template>
-    <div class="preloader absolute top-0 left-0 h-[100dvh] w-[100dwh] flex justify-end items-end p-10 bg-black z-50">
+    <div class="preloader absolute top-0 left-0 h-[100dvh] w-[100dvw] flex justify-end items-end p-10 bg-black z-50">
       <div class="text-8xl md:text-[15rem] leading-none">{{ loadingPercentage }}%</div>
     </div>
   </template>
