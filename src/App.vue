@@ -31,7 +31,7 @@ onMounted(() => {
   >
     <Marquee />
     <div
-      className="col-span-12 md:col-span-8 row-start-2 border-b-2 md:border-r-2 border-white overflow-y-auto"
+      className="col-span-12 md:col-span-8 row-start-2 border-b-2 md:border-b-0 md:border-r-2 border-white overflow-y-auto"
     >
       <RouterView />
     </div>
