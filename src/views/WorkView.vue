@@ -1,18 +1,3 @@
-<!-- <script setup>
-import { ref, onMounted } from 'vue';
-
-const jsonData = ref([]);
-
-onMounted(async () => {
-  try {
-    const response = await fetch('../src/data/data.json');
-    jsonData.value = await response.json();
-  } catch (error) {
-    console.error('Error loading JSON data:', error);
-  }
-});
-</script> -->
-
 <template>
         <Vue3Marquee class="h-full" :duration="20" :clone="true">
             <div class="relative aspect-square h-full" v-for="project in projects">
@@ -28,8 +13,8 @@ onMounted(async () => {
 import { ref, onMounted } from 'vue';
 import { createClient } from 'contentful';
 
-const spaceId = import.meta.env.VUE_APP_CONTENTFUL_SPACE_ID;
-const accessToken = import.meta.env.VUE_APP_CONTENTFUL_ACCESS_TOKEN;
+const spaceId = import.meta.env.VITE_CONTENTFUL_SPACE_ID;
+const accessToken = import.meta.env.VITE_CONTENTFUL_ACCESS_TOKEN;
 
 const projects = ref([]);
 const client = createClient({
