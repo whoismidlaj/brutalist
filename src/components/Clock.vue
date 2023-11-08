@@ -21,8 +21,8 @@ const updateCurrentTime = () => {
 </script>
 
 <template>
-      <div className="col-start-12 row-start-2">
+      <div className="col-start-12 md:col-start-12 col-span-3 md:col-span-1 row-start-3 md:row-start-2">
     <div class="flex justify-center items-center h-full">
-        <div class="rotate-90 text-2xl tracking-wide whitespace-nowrap">samayam<span class="block text-5xl font-medium">{{ currentTime }}</span></div>
+        <div class="rotate-90 text-xl md:text-2xl tracking-wide whitespace-nowrap">samayam<span class="block text-4xl md:text-5xl font-medium">{{ currentTime }}</span></div>
     </div></div>
 </template>

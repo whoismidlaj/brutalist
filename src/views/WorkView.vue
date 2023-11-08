@@ -14,7 +14,6 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div className="col-span-8 row-start-2 border-r-2 border-white">
         <Vue3Marquee class="h-full" :duration="20" :clone="true">
             <div class="relative aspect-square h-full" v-for="item in jsonData" :key="item.id">
                 <img class="h-full" :src="item.image" />
@@ -23,5 +22,4 @@ onMounted(async () => {
                 </div>
             </div>
         </Vue3Marquee>
-    </div>
 </template>
