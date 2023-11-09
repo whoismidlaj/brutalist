@@ -1,12 +1,11 @@
 <script setup>
-import { ref } from "vue";
 import Marquee from "../components/Marquee.vue";
 import Clock from "../components/Clock.vue";
 import Menu from "../components/Menu.vue";
 
 import Works from "../components/HomeComponents/Works.vue";
-import About from "../components/HomeComponents/About.vue";
-import Contact from "../components/HomeComponents/Contact.vue";
+// import About from "../components/HomeComponents/About.vue";
+// import Contact from "../components/HomeComponents/Contact.vue";
 </script>
 
 <template>
