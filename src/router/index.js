@@ -22,12 +22,6 @@ const router = createRouter({
       name: 'not-found',
       component: NotFound
     },
-    { 
-      path: '/*',
-      name: 'not-found',
-      component: NotFound
-    }
   ]
 })
-router.push({ name: 'not-found'});
 export default router
