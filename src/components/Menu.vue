@@ -1,7 +1,3 @@
-<script setup>
-// import { RouterLink } from 'vue-router';
-</script>
-
 <template>
     <div className="col-span-9 md:col-span-3 col-start-1 md:col-start-9 row-start-3 md:row-start-2 border-r-2 border-white">
         <div class="grid grid-rows-3 h-full">
